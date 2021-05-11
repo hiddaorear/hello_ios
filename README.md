@@ -9,3 +9,7 @@ Hello iOS
 # 初始化
 
 - [iOS Hello World With No Interface Builder or Storyboard](https://fancybeans.com/2015/11/02/ios-hello-world-with-no-interface-builder-or-storyboard/)
+
+# view的路由
+
+- [iOS应用架构谈 组件化方案](https://casatwy.com/iOS-Modulization.html)
