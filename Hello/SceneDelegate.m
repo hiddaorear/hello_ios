@@ -7,6 +7,7 @@
 
 #import "SceneDelegate.h"
 #import "ViewController.h"
+#import "RootViewController.h"
 
 @interface SceneDelegate ()
 
@@ -21,9 +22,33 @@
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
     UIWindowScene *windowScene = (UIWindowScene *)scene;
     self.window = [[UIWindow alloc] initWithWindowScene:windowScene];
-    self.window.backgroundColor = [UIColor purpleColor];
-    ViewController *VC = [[ViewController alloc]init];
-    [self.window setRootViewController:VC];
+    RootViewController *rootView = [[RootViewController alloc] init];
+    rootView.title = @"Root View";
+    
+    
+    
+    self.navController = [[UINavigationController alloc] init];
+    [self.navController pushViewController:rootView animated:YES];
+    [self.window addSubview:self.navController.view];
+    
+//    UIViewController *vc1 = [[UIViewController alloc] init];
+//    vc1.view.backgroundColor = [UIColor blueColor];
+//    UIViewController *vc2 = [[UIViewController alloc] init];
+//    vc2.view.backgroundColor = [UIColor redColor];
+//    UIViewController *vc3 = [[UIViewController alloc] init];
+//    vc3.view.backgroundColor = [UIColor greenColor];
+////    ViewController *VC = [[ViewController alloc]init];
+//
+//
+//    [nav setToolbarHidden:NO animated:YES];
+//    UIBarButtonItem *itemOne = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:nil action:nil];
+//    UIBarButtonItem *itemTwo = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:nil action:nil];
+//    UIBarButtonItem *itemThree = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:nil action:nil];
+//    UIBarButtonItem *itemFour = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:nil action:nil];
+//    UIBarButtonItem *fixedSpaceItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+//    nav.toolbarItems = @[itemOne, fixedSpaceItem, itemTwo, fixedSpaceItem, itemThree, fixedSpaceItem, itemFour];
+//    [nav setViewControllers:@[vc1, vc2, vc3] animated:YES];
+    
     [self.window makeKeyAndVisible];
 }
 

@@ -9,6 +9,7 @@
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) UIToolbar *toolBar;
 
 @end
 
