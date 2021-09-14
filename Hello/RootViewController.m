@@ -7,6 +7,8 @@
 
 #import "RootViewController.h"
 #import "ViewController.h"
+#import "Dog.h"
+#import "Person.h"
 
 @interface RootViewController ()
 
@@ -46,6 +48,15 @@
     UIBarButtonItem *flexItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
     [self setToolbarItems:@[itemOne, flexItem, itemTwo, flexItem, itemThree, flexItem, itemFour]];
 
+    
+//    NSMutableArray *arr1 = [NSMutableArray array];
+//    NSMutableArray *arr2 = [NSMutableArray array];
+//    [arr1 addObject:arr2];
+//    [arr2 addObject:arr1];
+    Person *p = [Person new];
+    Dog *d = [Dog new];
+    p.d = d;
+    d.p = p;
 }
 
 -(void)segmentAction:(id)sender {

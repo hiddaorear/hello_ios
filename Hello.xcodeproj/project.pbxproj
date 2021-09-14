@@ -15,6 +15,8 @@
 		210C1C29264ABD2800A0EF46 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 210C1C28264ABD2800A0EF46 /* main.m */; };
 		210C1C3A264BB6D400A0EF46 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 210C1C39264BB6D400A0EF46 /* RootViewController.m */; };
 		21C9EBFE264BD8980026846E /* OtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C9EBFD264BD8980026846E /* OtherViewController.m */; };
+		228DEF6326F0496D00221902 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 228DEF6226F0496D00221902 /* Person.m */; };
+		228DEF6726F0498000221902 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 228DEF6626F0498000221902 /* Dog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,10 @@
 		210C1C39264BB6D400A0EF46 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		21C9EBFC264BD8980026846E /* OtherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OtherViewController.h; sourceTree = "<group>"; };
 		21C9EBFD264BD8980026846E /* OtherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OtherViewController.m; sourceTree = "<group>"; };
+		228DEF6126F0496D00221902 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		228DEF6226F0496D00221902 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		228DEF6526F0498000221902 /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		228DEF6626F0498000221902 /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,10 @@
 				210C1C24264ABD2700A0EF46 /* LaunchScreen.storyboard */,
 				210C1C27264ABD2800A0EF46 /* Info.plist */,
 				210C1C28264ABD2800A0EF46 /* main.m */,
+				228DEF6126F0496D00221902 /* Person.h */,
+				228DEF6526F0498000221902 /* Dog.h */,
+				228DEF6626F0498000221902 /* Dog.m */,
+				228DEF6226F0496D00221902 /* Person.m */,
 			);
 			path = Hello;
 			sourceTree = "<group>";
@@ -153,6 +163,8 @@
 			files = (
 				210C1C1E264ABD2700A0EF46 /* ViewController.m in Sources */,
 				210C1C18264ABD2700A0EF46 /* AppDelegate.m in Sources */,
+				228DEF6726F0498000221902 /* Dog.m in Sources */,
+				228DEF6326F0496D00221902 /* Person.m in Sources */,
 				210C1C29264ABD2800A0EF46 /* main.m in Sources */,
 				21C9EBFE264BD8980026846E /* OtherViewController.m in Sources */,
 				210C1C1B264ABD2700A0EF46 /* SceneDelegate.m in Sources */,
